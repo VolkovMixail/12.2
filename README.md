@@ -29,3 +29,37 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 Результатом работы должны быть скриншоты обозначенных заданий, а так же "простыня" со всеми запросами.
 ___
 **Ответ:**
+
+Установил чистый инстанс MySQL версии 8.0+ и создав учетную запись sys_temp выполняю запрос на получение списка пользователей в Базе Данных. 
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/01.png)
+
+Даю все права для пользователя sys_temp и запрос на получение списка прав для пользователя sys_temp.
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/2.png)
+
+ALTER USER 'sys_temp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/3.png)
+
+По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачал дамп базы данных и Восстановил дамп в базу данных.Sakila
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/4.png)
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/5.png)
+
+ER-диаграмма получившихся баз данных и спользую команду для получения всех таблиц базы данных.
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/6.png)
+![](https://github.com/VolkovMixail/12.2/blob/main/img/7.png)
+
+# Задание 2.
+Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца, в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот / текст)
+
+Название таблицы | Название первичного ключа
+customer         | customer_id
+___
+
+**Ответ:**
+
+![](https://github.com/VolkovMixail/12.2/blob/main/img/8.png)
